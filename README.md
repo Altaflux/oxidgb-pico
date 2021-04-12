@@ -16,7 +16,8 @@ You will need:
   have this!).
     - Note that the Pico SDK is not required for this - you only need elf2uf2, so
       you don't need the main ARM toolchain/etc, just this binary.
-- A **nightly** Rust compiler with the `thumbv6m-none-eabi` installed. For example:
+- A **nightly** Rust compiler with the `thumbv6m-none-eabi` installed target. For
+  example:
 
 ```
 rustup default nightly
