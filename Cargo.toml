@@ -1,0 +1,26 @@
+[package]
+name = "oxidgb-pico"
+version = "0.2.0"
+authors = ["Selby <jselby@jselby.net>"]
+edition = "2018"
+license = "MIT"
+description = "A port of OxidGB to the Raspberry Pi Pico"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+paste = "1.0"
+bitflags = "1.2.1"
+
+cortex-m = "0.7"
+cortex-m-rt = "0.6.13"
+alloc-cortex-m = "*"
+
+rp2040-pac = { git = "https://github.com/rp-rs/rp2040-pac", branch="main" }
+rp2040-panic-usb-boot = "*"
+rp2040-boot2 = "0.1.0"
+
+embedded-graphics = "0.6.2"
+profont = "0.4.0"
+
+oxidgb_core = {git = "https://github.com/j-selby/oxidgb", rev="caac6cc85e21635f2ba29ac3572871602ba3f371", features = ['heap_alloc'], default-features = false}
