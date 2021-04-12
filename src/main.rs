@@ -17,7 +17,7 @@
 const DO_OVERCLOCK: bool = true;
 /// The PLL multiplier for any overclock applied.
 /// Stock is a multiplier of 15 (which is what is applied when `DO_OVERCLOCK` is set to false).
-const OVERCLOCK_MULTIPLIER: u32 = 35;
+const OVERCLOCK_MULTIPLIER: u32 = 30;
 /// Path to your game data, relative to the `src/` directory.
 const GAME_DATA: &'static [u8] = include_bytes!("../pokemon.gb");
 
